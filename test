@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tesco JSONP</title>
+
+    <script type="text/javascript">
+        function picture(){
+        var pic = "http://oi68.tinypic.com/m7v1qb.jpg"
+        document.getElementById('bigpic').src = pic.replace('20x20', '40x40');
+        document.getElementById('bigpic').style.display='block';
+        }
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+              localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "Tournee Counter: " + localStorage.clickcount;
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+        }
+    </script>
+
+
+</head>
+
+<body>
+<table>
+  <tr>
+    <td>
+      <img src="clausel-gezwickelt-web.png" alt="e beier, wat e genoss" width="200" height="100">
+    </td>
+    <td class="title">Neckel Muller Tournee Website</td>
+    <td>
+      <img src="clausel-classic-web.png" alt="zwee beier, e kennt schon gefloss" width="200" height="100">
+    </td>
+  </table>
+<h1 class="title2"> Thirsty? </h1>
+
+<h1 class="title2">  Push the Button and have a beer with Neckel </h1>
+
+  <button  onclick="picture();clickCounter()" >Neckel Muller Tournee</button>
+  <div id="result" class="result">
+  </div>
+        <img id="bigpic" src="bigpic" class="picture" style="display:none;" width="30%" />
+
+
+
+</body>
+
+</html>
