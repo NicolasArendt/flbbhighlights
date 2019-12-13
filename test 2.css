@@ -1,0 +1,37 @@
+body {
+  padding: 0px 0 0px;
+}
+
+button {
+  font-size: 25px;
+  padding: 15px;
+  margin-bottom: 25px;
+  margin-right: 500px;
+  background-color: gold;
+}
+
+
+}
+.picture{
+  text-align: center;
+  margin-left: 500px;
+
+}
+.title{
+  font-size: 45px;
+
+}
+.title2{
+  font-size: 25px;
+
+}
+table {
+  margin-left : auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.result {
+  font-size: 25px;
+  margin border-bottom: 30px;
+  text-decoration: inherit;
+}
